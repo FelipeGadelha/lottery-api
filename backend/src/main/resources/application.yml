@@ -1,0 +1,15 @@
+#docker-compose -f stack.yml up
+
+server:
+  servlet:
+    context-path: /api/lottery
+spring:
+  data:
+    jpa:
+      repositories:
+        enabled: true
+  profiles:
+    active: dev
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
