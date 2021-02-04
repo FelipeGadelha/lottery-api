@@ -15,11 +15,11 @@ import io.swagger.v3.oas.models.info.License;
 public class OpenApiConfig {
 
 	@Bean
-	public OpenAPI springSchoolOpenAPI() {
+	public OpenAPI springOpenAPI() {
 		return new OpenAPI()
 				.info(new Info()
-						.title("DSDelivery API")
-						.description("Spring DSDelivery API sample application")
+						.title("Lottery API")
+						.description("Spring Lottery API sample application")
 						.version("v1.0")
 						.contact(new Contact()
 								.name("Felipe Gadelha Diniz Da Silva")
@@ -29,8 +29,8 @@ public class OpenApiConfig {
 								.name("Apache 2.0")
 								.url("https://www.apache.org/licenses/LICENSE-2.0")))
 				.externalDocs(new ExternalDocumentation()
-						.description("Spring DSDelivery Github Documentation")
-						.url("https://github.com/FelipeGadelha/DSDelivery"));
+						.description("Spring Lottery Github Documentation")
+						.url("https://github.com/FelipeGadelha/lottery-api"));
 
 	}
 

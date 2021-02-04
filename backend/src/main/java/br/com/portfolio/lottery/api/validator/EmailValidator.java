@@ -13,8 +13,8 @@ public class EmailValidator implements ConstraintValidator<Email, Object>{
 		String email = (String) value;
 		String regex = "^[\\w\\.-]+@([\\w\\-]+\\.)+[A-Z]{2,4}$";
 		Pattern compile = Pattern.compile(regex, java.util.regex.Pattern.CASE_INSENSITIVE);
-		boolean matches = compile.matcher(email).matches();
-		return matches;
+		return compile.matcher(email).matches();
+		
 		
 	}
 
