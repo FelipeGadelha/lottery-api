@@ -25,12 +25,12 @@ public class UserService {
 		this.ticketRespository = ticketRespository;
 	}
 
-	@Transactional
+//	@Transactional
 	public List<User> findAll() {
 		return userRespository.findAll();
 	}
 
-	@Transactional
+//	@Transactional
 	public User register(User user) {
 		Ticket ticket = Ticket.generate(user);
 		user.setTickets(Arrays.asList(ticket));
