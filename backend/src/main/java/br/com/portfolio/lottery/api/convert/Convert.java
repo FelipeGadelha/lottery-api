@@ -7,8 +7,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class Convert {
 
-	@Autowired
 	private ModelMapper mapper;
+	
+	@Autowired
+	public Convert(ModelMapper mapper) {
+		this.mapper = mapper;
+	}
 
 	public <T, E> E mapper(T source, Class<E> typeDestination) {
 		return mapper.map(source, typeDestination);

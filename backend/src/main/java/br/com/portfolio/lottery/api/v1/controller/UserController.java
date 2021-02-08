@@ -35,6 +35,7 @@ public class UserController {
 	
 	@GetMapping("/tickets/{email}")
 	public List<TicketRs> findTicketsByEmail(@PathVariable String email) {
+		
 		return userService.findByEmail(email).stream()
 				.map(t -> convert.mapper(t, TicketRs.class))
 				.collect(Collectors.toList());

@@ -1,6 +1,5 @@
 package br.com.portfolio.lottery.domain.entity;
 
-import java.io.Serializable;
 import java.time.OffsetDateTime;
 import java.util.HashSet;
 import java.util.Random;
@@ -24,10 +23,8 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 
 @Entity
 @Table(name = "TICKETS")
-public class Ticket implements Serializable{
+public class Ticket {
 
-	private static final long serialVersionUID = 1L;
-	
 	@Id
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="generator")
 	@SequenceGenerator(name="generator", sequenceName="TICKETS_ID_SEQ", allocationSize=1)
@@ -97,8 +94,6 @@ public class Ticket implements Serializable{
 		this.creationDate = creationDate;
 	}
 
-	
-
 	@Override
 	public String toString() {
 		return "Ticket [id=" + id + ", user=" + user + ", numbers=" + numbers + ", creationDate=" + creationDate + "]";
@@ -115,7 +110,8 @@ public class Ticket implements Serializable{
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
-			return true;
+			return 
+					true;
 		if (obj == null)
 			return false;
 		if (getClass() != obj.getClass())
@@ -128,6 +124,8 @@ public class Ticket implements Serializable{
 			return false;
 		return true;
 	}
+
+	
 	
 	
 	

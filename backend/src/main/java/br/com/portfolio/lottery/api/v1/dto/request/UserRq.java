@@ -10,7 +10,6 @@ public class UserRq {
 	@NotNull
 	@NotBlank
 	@Email(message = "Este email é inválido")
-//	@UniqueValue(domainClass = User.class, fieldName = "email", message = "Já existe usuário com esse email")
 	private String email; 
 	
 	@Deprecated

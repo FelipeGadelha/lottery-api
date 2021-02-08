@@ -1,6 +1,5 @@
 package br.com.portfolio.lottery.domain.entity;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,9 +13,7 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity
 @Table(name = "USERS")
-public class User implements Serializable{
-
-	private static final long serialVersionUID = 1L;
+public class User {
 	
 	@Id
 	private String email;

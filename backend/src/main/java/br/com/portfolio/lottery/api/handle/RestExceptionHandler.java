@@ -22,8 +22,6 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 @ControllerAdvice
 public class RestExceptionHandler extends ResponseEntityExceptionHandler {
 
-	
-	
 	@ExceptionHandler(NullPointerException.class)
 	public ResponseEntity<BadRequestExceptionDetails> handleNullPointerException(
 			NullPointerException exception) {
@@ -68,8 +66,6 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler {
 					.build(),
 				HttpStatus.BAD_REQUEST);
 	}
-	
-	
 	
 	@ExceptionHandler(IllegalStateException.class)
 	public ResponseEntity<BadRequestExceptionDetails> handleIllegalStateException(IllegalStateException exception) {
@@ -123,5 +119,4 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler {
 				.developerMessage(ex.getClass().getName())
 				.build(), headers, status);
 	}
-
 }
