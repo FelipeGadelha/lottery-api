@@ -180,28 +180,28 @@ _Documentação da API._
 
 ## :hammer_and_wrench:Ferramentas utilizadas
 <ul style="list-style-type: none;">
-	<li  style="margin-bottom: 3px"><a href="https://www.linkedin.com/in/felipe-gadelha-diniz-da-silva-aaaa4a158/" target="_blank">
-		<img alt="PostgreSQL" src="https://img.shields.io/badge/Java-FF0000?logo=java&logoColor=white" /></a></li>
-		<li style="margin-bottom: 3px"><a href="https://www.linkedin.com/in/felipe-gadelha-diniz-da-silva-aaaa4a158/" target="_blank">
-		<img alt="PostgreSQL" src="https://img.shields.io/badge/Maven-C71A36?logo={https://simpleicons.org/icons/apachemaven.svg}&logoColor=white" /></a></li>
-	<li style="margin-bottom: 3px"><a href="https://www.linkedin.com/in/felipe-gadelha-diniz-da-silva-aaaa4a158/" target="_blank">
-		<img alt="PostgreSQL" src="https://img.shields.io/badge/Spring%20Boot-6DB33F?logo=spring&logoColor=white" /></a></li>
-	<li style="margin-bottom: 3px"><a href="https://www.linkedin.com/in/felipe-gadelha-diniz-da-silva-aaaa4a158/" target="_blank">
-		<img alt="PostgreSQL" src="https://img.shields.io/badge/Spring%20Validation-6DB33F?logo=spring&logoColor=white" /></a></li>
-	<li style="margin-bottom: 3px"><a href="https://www.linkedin.com/in/felipe-gadelha-diniz-da-silva-aaaa4a158/" target="_blank">
-		<img alt="PostgreSQL" src="https://img.shields.io/badge/Spring%20Spring%20Data%20JPA-6DB33F?logo=spring&logoColor=white" /></a></li>
+	<li  style="margin-bottom: 3px"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/index.html" target="_blank">
+		<img alt="Java" src="https://img.shields.io/badge/Java-FF0000?logo=java&logoColor=white" /></a></li>
+		<li style="margin-bottom: 3px"><a href="https://maven.apache.org/guides/" target="_blank">
+		<img alt="Maven" src="https://img.shields.io/badge/Maven-C71A36?logo={https://simpleicons.org/icons/apachemaven.svg}&logoColor=white" /></a></li>
+	<li style="margin-bottom: 3px"><a href="https://spring.io/projects/spring-boot" target="_blank">
+		<img alt="Spring Boot" src="https://img.shields.io/badge/Spring%20Boot-6DB33F?logo=spring&logoColor=white" /></a></li>
+	<li style="margin-bottom: 3px"><a href="https://www.baeldung.com/spring-boot-bean-validation" target="_blank">
+		<img alt="Spring Validation" src="https://img.shields.io/badge/Spring%20Validation-6DB33F?logo=spring&logoColor=white" /></a></li>
+	<li style="margin-bottom: 3px"><a href="https://spring.io/projects/spring-data-jpa" target="_blank">
+		<img alt="Spring Data JPA" src="https://img.shields.io/badge/Spring%20Data%20JPA-6DB33F?logo=spring&logoColor=white" /></a></li>
 	<li style="margin-bottom: 3px"><a href="https://springdoc.org" target="_blank">
-		<img alt="PostgreSQL" src="https://img.shields.io/badge/Springdoc%20OpenApi-6DB33F?logo=spring&logoColor=white" /></a></li>
-	<li style="margin-bottom: 3px"><a href="https://www.linkedin.com/in/felipe-gadelha-diniz-da-silva-aaaa4a158/" target="_blank">
-		<img alt="PostgreSQL" src="https://img.shields.io/badge/Modelmapper-14354C?logo=Maven&logoColor=white" /></a></li>
-	<li style="margin-bottom: 3px"><a href="https://www.linkedin.com/in/felipe-gadelha-diniz-da-silva-aaaa4a158/" target="_blank">
-		<img alt="PostgreSQL" src="https://img.shields.io/badge/Flyway-1572B6?logoColor=white" /></a></li>
-	<li style="margin-bottom: 3px"><a href="https://www.linkedin.com/in/felipe-gadelha-diniz-da-silva-aaaa4a158/" target="_blank">
+		<img alt="Springdoc OpenApi" src="https://img.shields.io/badge/Springdoc%20OpenApi-6DB33F?logo=spring&logoColor=white" /></a></li>
+	<li style="margin-bottom: 3px"><a href="http://modelmapper.org/getting-started/" target="_blank">
+		<img alt="Modelmapper" src="https://img.shields.io/badge/Modelmapper-14354C?logo=Maven&logoColor=white" /></a></li>
+	<li style="margin-bottom: 3px"><a href="https://flywaydb.org/documentation/getstarted/" target="_blank">
+		<img alt="Flyway" src="https://img.shields.io/badge/Flyway-1572B6?logoColor=white" /></a></li>
+	<li style="margin-bottom: 3px"><a href="https://www.postgresql.org/docs/9.6/index.html" target="_blank">
 		<img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-316192?logo=postgresql" /></a></li>
-	<li style="margin-bottom: 3px"><a href="https://www.linkedin.com/in/felipe-gadelha-diniz-da-silva-aaaa4a158/" target="_blank">
-		<img alt="PostgreSQL" src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white" /></a></li>
-	<li><a href="https://www.linkedin.com/in/felipe-gadelha-diniz-da-silva-aaaa4a158/" target="_blank">
-		<img alt="PostgreSQL" src="https://img.shields.io/badge/Docker-2CA5E0?logo=docker&logoColor=white" /></a></li>
+	<li style="margin-bottom: 3px"><a href="https://git-scm.com/doc" target="_blank">
+		<img alt="Git" src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white" /></a></li>
+	<li><a href="https://docs.docker.com" target="_blank">
+		<img alt="Docker" src="https://img.shields.io/badge/Docker-2CA5E0?logo=docker&logoColor=white" /></a></li>
 </ul>
 
 
