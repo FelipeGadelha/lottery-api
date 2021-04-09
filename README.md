@@ -1,7 +1,7 @@
 # lottery-api
 
 <p align="center">
-  <a href="https://www.youtube.com/channel/UCTHEnDuI2uIYeTwV4RR7nOA" target="_blank">
+  <a href="https://www.youtube.com/channel/UCTHEnDuI2uIYeTwV4RR7nOA">
     <img src="https://img.shields.io/badge/YouTube-FF0000?logo=youtube&logoColor=write" /><a/>
    <a href="https://www.linkedin.com/in/felipe-gadelha-diniz-da-silva-aaaa4a158/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white" /><a/>
