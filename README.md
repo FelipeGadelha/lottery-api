@@ -9,6 +9,7 @@
     <img alt="Instagram" src="https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white" /><a/>
   <a href="https://www.facebook.com/felipe.gadelha.545/">
     <img alt="Facebook" src="https://img.shields.io/badge/Facebook-1877F2?logo=facebook&logoColor=white" /><a/>
+  <a href="mailto:felipegadelha90@gmail.com">
     <img alt="Gmail" src="https://img.shields.io/badge/Gmail%20felipegadelha90@gmail.com-D14836?logo=gmail&logoColor=white&link=mailto:felipegadelha90@gmail.com" />
 	<a href="https://twitter.com/Felipe52956739">
       <img alt="Twitter" src="https://img.shields.io/twitter/follow/Felipe52956739?label=Follow%20%40Felipe52956739&logo=Twitter&style=flat"></a>
