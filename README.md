@@ -23,11 +23,11 @@
 
 ## :heavy_check_mark:O que há neste documento
 - [Missão deste projeto](https://github.com/FelipeGadelha/lottery-api#speech_balloonmissão-deste-projeto)
-- [Ferramentas utilizadas](https://github.com/FelipeGadelha/lottery-api#hammer_and_wrenchferramentas-utilizadas)
-- [Executando os testes](https://github.com/FelipeGadelha/lottery-api#executando-todos-os-testes)
-- [Executando o projeto com Docker](https://github.com/FelipeGadelha/lottery-api#whaleexecutando-o-projeto-com-docker)
-- [Executando o projeto localmente](https://github.com/FelipeGadelha/lottery-api#computerexecutando-o-projeto-localmente)
 - [Endpoints disponíveis](https://github.com/FelipeGadelha/lottery-api#mag_rightendpoints-disponíveis)
+- [Ferramentas utilizadas](https://github.com/FelipeGadelha/lottery-api#hammer_and_wrenchferramentas-utilizadas)
+- [Executando os testes](https://github.com/FelipeGadelha/lottery-api#executando-os-testes)
+- [Executando o projeto com Docker](https://github.com/FelipeGadelha/lottery-api#whaleexecutando-o-projeto-com-docker)
+
 
 ## :speech_balloon:Missão deste projeto
 
