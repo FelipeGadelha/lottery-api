@@ -11,7 +11,8 @@
     <img src="https://img.shields.io/badge/Facebook-1877F2?logo=facebook&logoColor=white" /><a/>
     <a href="felipegadelha90@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white" /></a>
-      <img alt="Twitter" src="https://img.shields.io/twitter/follow/Felipe52956739?label=Follow%20%40Felipe52956739&logo=Twitter&style=flat">
+	<a href="https://twitter.com/Felipe52956739">
+      <img alt="Twitter" src="https://img.shields.io/twitter/follow/Felipe52956739?label=Follow%20%40Felipe52956739&logo=Twitter&style=flat"></a>
 </p>
 <p align="center">
 	<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/FelipeGadelha/lottery-api?logo=GitHub&style=flat">
