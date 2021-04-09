@@ -50,4 +50,4 @@ jobs:
       shell: bash
       run: |
         pwd
-        mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
+        mvnw verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
