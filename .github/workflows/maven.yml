@@ -4,7 +4,9 @@
 name: maven
 
 on:
-  push:
+  push:    
+    paths:
+      - 'backend/**'
     branches: [ master ]
   pull_request:
     branches: [ master ]
@@ -45,6 +47,5 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      run: |
-        cd backend
-        mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
+        working-directory: backend
+      run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
