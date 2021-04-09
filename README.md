@@ -32,9 +32,12 @@
 
 ## :speech_balloon:Missão deste projeto
 
-_Criar uma API REST que gerar números aleatórios para loteria._
+_Criar uma API REST que gerar números aleatórios para loteria._ 
+
+[![](https://img.shields.io/badge/-Manual-2CA5E0)](https://github.com/FelipeGadelha/lottery-api/blob/master/Construindo%20uma%20API%20REST%20com%20Java%20e%20Spring.pdf)
 
 ## :mag_right:Endpoints disponíveis 
+
 [![](https://img.shields.io/badge/-Arquivo%20Postman-FF6C37)](https://github.com/FelipeGadelha/lottery-api/blob/master/Lottery.postman_collection.json)
 
 Antecedido por <Strong>http://\<seu-host\>:8080/api/lottery</Strong> temos os endpoints
