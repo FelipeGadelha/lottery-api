@@ -212,11 +212,6 @@ No terminal, navegue até a pasta raiz do projeto e execute:
 ```shell
 ./mvnw test
 ```
-no Windows:
-
-```shell
-./mvnw test
-```
 
 ## :whale:Executando o projeto com Docker
 
