@@ -40,7 +40,7 @@
 					"response": []
 				},
 				{
-					"name": "user findAll",
+					"name": "User findAll",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -79,6 +79,29 @@
 			"item": [
 				{
 					"name": "Ticket findAllByUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/lottery/v1/user/tickets/felipe@email.com",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"lottery",
+								"v1",
+								"user",
+								"tickets",
+								"felipe@email.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ticket winner",
 					"request": {
 						"method": "GET",
 						"header": [],
