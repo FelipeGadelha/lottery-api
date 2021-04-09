@@ -33,7 +33,8 @@
 
 _Criar uma API REST que gerar números aleatórios para loteria._
 
-## :mag_right:Endpoints disponíveis [![](https://img.shields.io/badge/-Arquivo%20Postman-FF6C37)](https://github.com/FelipeGadelha/lottery-api/blob/master/Lottery.postman_collection.json)
+## :mag_right:Endpoints disponíveis 
+[![](https://img.shields.io/badge/-Arquivo%20Postman-FF6C37)](https://github.com/FelipeGadelha/lottery-api/blob/master/Lottery.postman_collection.json)
 
 Antecedido por <Strong>http://\<seu-host\>:8080/api/lottery</Strong> temos os endpoints
 
