@@ -2,14 +2,14 @@
 
 <p align="center">
   <a href="https://www.youtube.com/channel/UCTHEnDuI2uIYeTwV4RR7nOA">
-    <img src="https://img.shields.io/badge/YouTube-FF0000?logo=youtube&logoColor=write" /><a/>
+    <img alt="YouTube" src="https://img.shields.io/badge/YouTube-FF0000?logo=youtube&logoColor=write" /><a/>
    <a href="https://www.linkedin.com/in/felipe-gadelha-diniz-da-silva-aaaa4a158/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white" /><a/>
+    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white" /><a/>
   <a href="https://www.instagram.com/fe3liip3/">  
-    <img src="https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white" /><a/>
+    <img alt="Instagram" src="https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white" /><a/>
   <a href="https://www.facebook.com/felipe.gadelha.545/">
-    <img src="https://img.shields.io/badge/Facebook-1877F2?logo=facebook&logoColor=white" /><a/>
-    <img src="https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white" />
+    <img alt="Facebook" src="https://img.shields.io/badge/Facebook-1877F2?logo=facebook&logoColor=white" /><a/>
+    <img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white" />
 	<a href="https://twitter.com/Felipe52956739">
       <img alt="Twitter" src="https://img.shields.io/twitter/follow/Felipe52956739?label=Follow%20%40Felipe52956739&logo=Twitter&style=flat"></a>
 </p>
