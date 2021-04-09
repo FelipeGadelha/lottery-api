@@ -6,6 +6,8 @@ import java.util.stream.Collectors;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -33,7 +35,7 @@ public class UserController {
 		this.convert = convert;
 	}
 	
-	@GetMapping("/tickets/{email}")
+	@GetMapping("/{email}/tickets")
 	public List<TicketRs> findTicketsByEmail(@PathVariable String email) {
 		
 		return userService.findByEmail(email).stream()
@@ -51,10 +53,10 @@ public class UserController {
 	
 	
 	@PostMapping("/register")
-	public UserRs register(@RequestBody @Valid UserRq userRq) {
+	public ResponseEntity<?> register(@RequestBody @Valid UserRq userRq) {
 		User user = convert.mapper(userRq, User.class);
 		User saved = userService.register(user);
-		return this.merge(saved);
+		return ResponseEntity.status(HttpStatus.CREATED).body(this.merge(saved));
 	}
 	
 	private UserRs merge(User user) {

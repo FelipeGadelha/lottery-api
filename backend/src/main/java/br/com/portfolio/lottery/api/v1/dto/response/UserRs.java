@@ -32,4 +32,11 @@ public class UserRs {
 		this.ticketsRs = ticketsRs;
 	}
 
+	@Override
+	public String toString() {
+		return "UserRs [email=" + email + ", ticketsRs=" + ticketsRs + "]";
+	}
+	
+	
+
 }

@@ -5,17 +5,37 @@
 #spring.jpa.properties.hibernate.hbm2ddl.delimiter=;
 #?serverTimezone=UTC
 spring:
+  flyway:
+    locations: classpath:db/migration
   datasource:
-    password: password
+    name: LotteryDataSource
+    driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/lottery-db
     username: postgres
+    password: password
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      pool-name: LotteryPool
+      connection-test-query: select now()
+      maximum-pool-size: 5
+      minimum-idle: 1
+      connection-timeout: 20000
+      idle-timeout: 10000
   jpa:
-    generate-ddl: true
-    hibernate:
-      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+#    generate-ddl: true
+#    hibernate:
+#      ddl-auto: update
     properties:
+#      javax:
+#        persistence:
+#          schema-generation:
+#            create-source: metadata
+#            scripts:
+#              action: create
+#              create-target: create.sql
       hibernate:
-        format_sql: true
+#        format_sql: true
         jdbc:
           lob:
             non_contextual_creation: true

@@ -1,22 +1,26 @@
 package br.com.portfolio.lottery.api.v1.dto.response;
 
 import java.time.OffsetDateTime;
-import java.util.HashSet;
 import java.util.Objects;
-import java.util.Set;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+
+import br.com.portfolio.lottery.domain.entity.Numbers;
+
+@JsonInclude(Include.NON_NULL)
 public class TicketRs {
 	
 	private Long id;
 	
-	private Set<Integer> numbers = new HashSet<>();
+	private Numbers numbers;
 	
 	private OffsetDateTime creationDate;
 	
 	@Deprecated
 	public TicketRs() {	}
 
-	public TicketRs(Long id, Set<Integer> numbers, OffsetDateTime creationDate) {
+	public TicketRs(Long id, Numbers numbers, OffsetDateTime creationDate) {
 		this.id = id;
 		this.numbers = numbers;
 	}
@@ -29,10 +33,10 @@ public class TicketRs {
 		this.id = id;
 	}
 
-	public Set<Integer> getNumbers() {
+	public Numbers getNumbers() {
 		return numbers;
 	}
-	public void setNumbers(Set<Integer> numbers) {
+	public void setNumbers(Numbers numbers) {
 		this.numbers = numbers;
 	}
 	
@@ -44,5 +48,11 @@ public class TicketRs {
 	public void setCreationDate(OffsetDateTime creationDate) {
 		this.creationDate = creationDate;
 	}
+
+	@Override
+	public String toString() {
+		return "TicketRs [id=" + id + ", numbers=" + numbers + ", creationDate=" + creationDate + "]";
+	}
+	
 	
 }

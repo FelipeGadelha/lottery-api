@@ -14,8 +14,8 @@ public class TicketTest {
 		Ticket ticket = new Ticket();
 		Ticket ticket2 = new Ticket();
 		
-		ticket.setNumbers(Set.of(49, 37, 54, 22, 47, 31));
-		ticket2.setNumbers(Set.of(49, 37, 54, 22, 47, 31));
+//		ticket.setNumbers(Set.of(49, 37, 54, 22, 47, 31));
+//		ticket2.setNumbers(Set.of(49, 37, 54, 22, 47, 31));
 
 		User user = new User("felipe@email.com", null);
 		

@@ -1,33 +1,32 @@
 package br.com.portfolio.lottery.domain.entity;
 
 import java.time.OffsetDateTime;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Random;
 import java.util.Set;
 
-import javax.persistence.CollectionTable;
 import javax.persistence.Column;
-import javax.persistence.ElementCollection;
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
+import org.hibernate.annotations.CreationTimestamp;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 @Entity
 @Table(name = "TICKETS")
 public class Ticket {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="generator")
-	@SequenceGenerator(name="generator", sequenceName="TICKETS_ID_SEQ", allocationSize=1)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="id")	
 	private Long id;
 	
@@ -36,32 +35,70 @@ public class Ticket {
 	@JoinColumn(name = "user_email")
 	private User user;
 	
-	@ElementCollection(fetch = FetchType.EAGER)
-	@CollectionTable(name = "tickets_numbers",
-			joinColumns = @JoinColumn(table = "ticket_id" ))
-	private Set<Integer> numbers = new HashSet<>();
-	@Column(name="creation_date")	
+	@Embedded
+	private Numbers numbers;
+	
+//	@ElementCollection(fetch = FetchType.EAGER)
+//	@CollectionTable(name = "tickets_numbers",
+//			joinColumns = @JoinColumn(table = "ticket_id" ))
+//	private Set<Integer> numbers = new HashSet<>();
+	
+	@CreationTimestamp
+	@Column(name="creation_date", nullable = false)	
 	private OffsetDateTime creationDate;
 
 	@Deprecated
 	public Ticket() {	}
 	
-	private Ticket(Long id, User user, Set<Integer> numbers, OffsetDateTime creationDate) {
+	private Ticket(Long id, User user, Numbers numbers) {
 		this.id = id;
 		this.user = user;
 		this.numbers = numbers;
-		this.creationDate = creationDate;
 	}
 
 	public static Ticket generate(User user) {
+		List<Integer> list = random();
+		return new Ticket(
+				null, 
+				user,
+				new Numbers(
+//						2,3,1,5,6,4
+						list.get(0), 
+						list.get(1), 
+						list.get(2), 
+						list.get(3), 
+						list.get(4), 
+						list.get(5)
+						)
+				);
+	}
+	
+	public static Ticket winner() {
+		List<Integer> list = random();
+		return new Ticket(
+				null, 
+				null,
+				new Numbers(
+//						1,2,3,4,5,6
+						list.get(0), 
+						list.get(1), 
+						list.get(2), 
+						list.get(3), 
+						list.get(4), 
+						list.get(5)
+						)
+				);
+	}
+	
+	private static List<Integer> random() {
 		Set<Integer> numbers = new HashSet<>(6);
 		Random random = new Random();
 		while (numbers.size() < 6) {
 			numbers.add(random.nextInt(60) + 1);
 		}
-		return new Ticket(null, user, numbers, OffsetDateTime.now());
+		return new ArrayList<>(numbers);
 	}
-
+	
 	public Long getId() {
 		return id;
 	}
@@ -78,25 +115,21 @@ public class Ticket {
 		this.user = user;
 	}
 
-	public Set<Integer> getNumbers() {
+	public Numbers getNumbers() {
 		return numbers;
 	}
 
-	public void setNumbers(Set<Integer> numbers) {
+	public void setNumbers(Numbers numbers) {
 		this.numbers = numbers;
 	}
-
+	
 	public OffsetDateTime getCreationDate() {
 		return creationDate;
 	}
 
-	public void setCreationDate(OffsetDateTime creationDate) {
-		this.creationDate = creationDate;
-	}
-
 	@Override
 	public String toString() {
-		return "Ticket [id=" + id + ", user=" + user + ", numbers=" + numbers + ", creationDate=" + creationDate + "]";
+		return "Ticket [id=" + id + ", numbers=" + numbers + ", creationDate=" + creationDate + "]";
 	}
 
 	@Override
@@ -125,8 +158,4 @@ public class Ticket {
 		return true;
 	}
 
-	
-	
-	
-	
 }

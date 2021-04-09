@@ -33,7 +33,22 @@ public class UserService {
 
 	public User register(User user) {
 		Ticket ticket = Ticket.generate(user);
+		
 		user.setTickets(Arrays.asList(ticket));
 		return userRespository.save(user);
+	}
+	
+	public Ticket winner() {
+		Ticket winner = Ticket.winner();
+		List<Ticket> list = ticketRespository.findByNumbersFirst(
+				winner.getNumbers().getFirst(), 
+				winner.getNumbers().getSecond(),
+				winner.getNumbers().getThird(),
+				winner.getNumbers().getFourth(),
+				winner.getNumbers().getFifth(),
+				winner.getNumbers().getSixth()
+				);
+		list.forEach(t -> System.err.println("o ganhador é " + t));
+		return winner;
 	}
 }
