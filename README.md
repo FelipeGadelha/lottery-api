@@ -189,7 +189,7 @@ _Documentação da API._
 	<li  style="margin-bottom: 3px"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/index.html" target="_blank">
 		<img alt="Java" src="https://img.shields.io/badge/Java-FF0000?logo=java&logoColor=white" /></a></li>
 		<li style="margin-bottom: 3px"><a href="https://maven.apache.org/guides/" target="_blank">
-		<img alt="Maven" src="https://img.shields.io/badge/Maven-C71A36?logo={https://simpleicons.org/icons/apachemaven.svg}&logoColor=white" /></a></li>
+		<img alt="Maven" src="https://img.shields.io/badge/Maven-C71A36?logo=apache-maven&logoColor=white" /></a></li>
 	<li style="margin-bottom: 3px"><a href="https://spring.io/projects/spring-boot" target="_blank">
 		<img alt="Spring Boot" src="https://img.shields.io/badge/Spring%20Boot-6DB33F?logo=spring&logoColor=white" /></a></li>
 	<li style="margin-bottom: 3px"><a href="https://www.baeldung.com/spring-boot-bean-validation" target="_blank">
