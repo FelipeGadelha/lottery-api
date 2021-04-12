@@ -187,7 +187,7 @@ _Documentação da API._
 ## :hammer_and_wrench:Ferramentas utilizadas
 <ul style="list-style-type: none;">
 	<li  style="margin-bottom: 3px"><a href="https://docs.oracle.com/en/java/javase/11/docs/api/index.html" target="_blank">
-		<img alt="Java" src="https://img.shields.io/badge/Java%2011-FF0000?&logo=java&logoColor=white" /></a></li>
+		<img alt="Java" src="https://img.shields.io/badge/Java-FF0000?&logo=java&logoColor=white" /></a></li>
 		<li style="margin-bottom: 3px"><a href="https://maven.apache.org/guides/" target="_blank">
 		<img alt="Maven" src="https://img.shields.io/badge/Maven-C71A36?logo=apache-maven&logoColor=white" /></a></li>
 	<li style="margin-bottom: 3px"><a href="https://spring.io/projects/spring-boot" target="_blank">
