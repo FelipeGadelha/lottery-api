@@ -51,6 +51,9 @@ jobs:
       - name: directory
         run: |
           pwd
+      - name: files
+        run: |
+          ls
       - name: Build and analyze
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
