@@ -26,8 +26,8 @@ jobs:
       run: mvn -B package --file pom.xml
       
   sonar:
-    name: Build
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - uses: actions/checkout@v2
         with:
