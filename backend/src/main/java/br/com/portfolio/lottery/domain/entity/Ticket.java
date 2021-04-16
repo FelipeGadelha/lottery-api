@@ -6,6 +6,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Random;
 import java.util.Set;
+import java.util.function.Function;
 
 import javax.persistence.Column;
 import javax.persistence.Embedded;
@@ -55,6 +56,7 @@ public class Ticket {
 		this.user = user;
 		this.numbers = numbers;
 	}
+	
 
 	public static Ticket generate(User user) {
 		List<Integer> list = random();
@@ -98,6 +100,10 @@ public class Ticket {
 		}
 		return new ArrayList<>(numbers);
 	}
+	
+	public <R> R map(Function<Ticket, R> func) {
+        return func.apply(this);
+    }
 	
 	public Long getId() {
 		return id;

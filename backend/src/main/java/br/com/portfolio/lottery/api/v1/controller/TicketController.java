@@ -25,8 +25,8 @@ public class TicketController {
 	
 	@GetMapping("/winner")
 	public ResponseEntity<?> winner() {
-		TicketRs converted = convert.mapper(userService.winner(), TicketRs.class);
-		return ResponseEntity.ok(converted);
+		return ResponseEntity.ok(userService.winner().
+				map(u -> convert.mapper(u, TicketRs.class)));
 	}
 		
 	

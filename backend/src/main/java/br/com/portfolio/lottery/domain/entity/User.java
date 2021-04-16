@@ -2,6 +2,7 @@ package br.com.portfolio.lottery.domain.entity;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -13,7 +14,7 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity
 @Table(name = "USERS")
-public class User {
+public class User{
 	
 	@Id
 	private String email;
@@ -29,7 +30,11 @@ public class User {
 		this.email = email;
 		this.tickets = tickets;
 	}
-
+	
+    public <R> R map(Function<User, R> func) {
+        return func.apply(this);
+    }
+    
 	public void setEmail(String email) {
 		this.email = email;
 	}
@@ -75,6 +80,12 @@ public class User {
 			return false;
 		return true;
 	}
+
+
+
+
+
+
 
 
 }

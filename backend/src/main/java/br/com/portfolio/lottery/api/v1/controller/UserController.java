@@ -37,8 +37,8 @@ public class UserController {
 	
 	@GetMapping("/{email}/tickets")
 	public List<TicketRs> findTicketsByEmail(@PathVariable String email) {
-		
-		return userService.findByEmail(email).stream()
+		return userService.findByEmail(email)
+				.stream()
 				.map(t -> convert.mapper(t, TicketRs.class))
 				.collect(Collectors.toList());
 	}
@@ -54,6 +54,7 @@ public class UserController {
 	
 	@PostMapping("/register")
 	public ResponseEntity<?> register(@RequestBody @Valid UserRq userRq) {
+		
 		User user = convert.mapper(userRq, User.class);
 		User saved = userService.register(user);
 		return ResponseEntity.status(HttpStatus.CREATED).body(this.merge(saved));
@@ -64,7 +65,7 @@ public class UserController {
 				.stream()
 				.map(t -> convert.mapper(t, TicketRs.class))
 				.collect(Collectors.toList());
-		UserRs userRs = convert.mapper(user, UserRs.class);
+		UserRs userRs = user.map(u -> convert.mapper(u, UserRs.class));
 		userRs.setTicketsRs(ticketList);
 		return userRs;
 	}

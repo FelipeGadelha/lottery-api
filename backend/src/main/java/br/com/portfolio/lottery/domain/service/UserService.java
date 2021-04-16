@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import br.com.portfolio.lottery.domain.entity.Ticket;
 import br.com.portfolio.lottery.domain.entity.User;
-import br.com.portfolio.lottery.domain.repository.TicketRepository;	
+import br.com.portfolio.lottery.domain.repository.TicketRepository;
 import br.com.portfolio.lottery.domain.repository.UserRepository;
 
 @Service
@@ -33,7 +33,6 @@ public class UserService {
 
 	public User register(User user) {
 		Ticket ticket = Ticket.generate(user);
-		
 		user.setTickets(Arrays.asList(ticket));
 		return userRespository.save(user);
 	}

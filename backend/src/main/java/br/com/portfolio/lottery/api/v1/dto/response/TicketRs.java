@@ -2,6 +2,7 @@ package br.com.portfolio.lottery.api.v1.dto.response;
 
 import java.time.OffsetDateTime;
 import java.util.Objects;
+import java.util.function.Function;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
@@ -24,6 +25,10 @@ public class TicketRs {
 		this.id = id;
 		this.numbers = numbers;
 	}
+	
+    public <R> R map(Function<TicketRs, R> func) {
+        return func.apply(this);
+    }
 
 	public Long getId() {
 		return id;

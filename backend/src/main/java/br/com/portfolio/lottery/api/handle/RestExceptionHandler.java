@@ -102,19 +102,19 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler {
 				.details("Check the error field(s)")
 				.developerMessage(exception.getClass().getName())
 				.errors(map)
-				.build(), headers, HttpStatus.BAD_REQUEST);		
+				.build(), headers, HttpStatus.BAD_REQUEST);	
 	}
 	
 	@Override
 	protected ResponseEntity<Object> handleExceptionInternal(Exception ex, @Nullable Object body, HttpHeaders headers,
 			HttpStatus status, WebRequest request) {
-		boolean isEmpty = false;
+		boolean isEmpty = ex.getCause().getMessage().isEmpty();
 //		InvalidDataAccessApiUsageException
 		return new ResponseEntity<>(ExceptionDetails
 				.builder()
 				.timestamp(OffsetDateTime.now())
 				.status(status.value())
-				.title(isEmpty ? ex.getCause().getMessage() : ex.getMessage())
+				.title(isEmpty ? ex.getMessage() : ex.getCause().getMessage())
 				.details(ex.getMessage())
 				.developerMessage(ex.getClass().getName())
 				.build(), headers, status);

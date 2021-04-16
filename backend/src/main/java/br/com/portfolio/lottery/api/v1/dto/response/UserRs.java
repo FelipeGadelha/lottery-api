@@ -2,6 +2,7 @@ package br.com.portfolio.lottery.api.v1.dto.response;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
 
 public class UserRs {
 
@@ -15,6 +16,10 @@ public class UserRs {
 		this.email = email;
 		this.ticketsRs = ticketRs;
 	}
+	
+    public <R> R map(Function<UserRs, R> func) {
+        return func.apply(this);
+    }
 
 	public void setEmail(String email) {
 		this.email = email;

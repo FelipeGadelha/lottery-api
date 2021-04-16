@@ -1,5 +1,7 @@
 package br.com.portfolio.lottery.api.v1.dto.request;
 
+import java.util.function.Function;
+
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
@@ -18,6 +20,10 @@ public class UserRq {
 	public UserRq(String email) {
 		this.email = email;
 	}
+	
+    public <R> R map(Function<UserRq, R> func) {
+        return func.apply(this);
+    }
 
 	public String getEmail() {
 		return email;
