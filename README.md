@@ -16,6 +16,7 @@
 </p>
 <p align="center">
 	<img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/FelipeGadelha/lottery-api/maven">
+    [![maven](https://github.com/FelipeGadelha/lottery-api/actions/workflows/maven.yml/badge.svg)](https://github.com/FelipeGadelha/lottery-api/actions/workflows/maven.yml)
 	<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/FelipeGadelha/lottery-api?logo=GitHub&style=flat">
 	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/FelipeGadelha/lottery-api?logo=GitHub">
 	<img alt="GitHub closed pull requests" src="https://img.shields.io/github/issues-pr-closed/FelipeGadelha/lottery-api?logo=GitHub">
