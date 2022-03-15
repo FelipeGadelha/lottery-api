@@ -226,3 +226,11 @@ No terminal, navegue até a pasta raiz do projeto e execute:
 ```shell
 docker-compose up -d
 ```
+
+## Como Gerar relatórios do Jacoco
+
+No terminal, navegue até a pasta raiz do projeto e execute:
+
+```shell
+mvn verify
+```
